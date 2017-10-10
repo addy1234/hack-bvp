@@ -13,6 +13,10 @@
             android:title="Form" />
 
         <item
+            android:id="@+id/location"
+            android:icon="@drawable/location"
+            android:title="Location" />
+        <item
             android:id="@+id/about_us"
             android:icon="@drawable/about"
             android:title="About-Us" />
