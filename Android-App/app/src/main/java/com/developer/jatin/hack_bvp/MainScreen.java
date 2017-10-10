@@ -113,17 +113,14 @@ Toolbar toolbar;
             intent.launchUrl(MainScreen.this, Uri.parse(url));
 
         } else if (id == R.id.about_us) {
-//            toolbar.setTitle("About Us");
-////            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
-//            String url = "https://github.com/addy1234/hack-bvp";
-//
-//
-//            final CustomTabsIntent intent=new CustomTabsIntent.Builder().build();
-//            intent.launchUrl(MainScreen.this, Uri.parse(url));
+            toolbar.setTitle("About Us");
+//            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
+            String url = "https://github.com/addy1234/hack-bvp";
 
-      Intent i = new Intent();
-            i.setClass(MainScreen.this,MapsActivity.class);
-            startActivity(i);
+
+            final CustomTabsIntent intent=new CustomTabsIntent.Builder().build();
+            intent.launchUrl(MainScreen.this, Uri.parse(url));
+
         } else if (id == R.id.up_coming_talks) {
             toolbar.setTitle("Upcoming Talks");
             toolbar.setBackgroundColor(Color.parseColor("#ff420e"));
@@ -143,7 +140,18 @@ Toolbar toolbar;
             startActivity(Intent.createChooser(sendIntent, "share"));
             toolbar.setBackgroundColor(Color.parseColor("#ff420e"));
 
+        }else if (id == R.id.location) {
+            toolbar.setTitle("Location");
+
+
+            Intent i = new Intent();
+            i.setClass(MainScreen.this,MapsActivity.class);
+            startActivity(i);
+
+
         }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
