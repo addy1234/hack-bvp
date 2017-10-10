@@ -6,7 +6,11 @@
     android:layout_height="match_parent"
     android:id="@+id/app_bar"
     tools:context="com.developer.jatin.hack_bvp.MainScreen">
-
+    <ImageView android:id="@+id/splashscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

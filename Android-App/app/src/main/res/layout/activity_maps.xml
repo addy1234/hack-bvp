@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.developer.jatin.hack_bvp.MapsActivity" >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Address\nC-4 Janak Puri, New Delhi-110058 \n Email \n director@msit.in"
+
+    android:gravity="center"
+    android:textSize="20dp"
+    android:textStyle="bold"/>
+    <fragment
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_weight="3">
+
+</fragment>
+</LinearLayout>
