@@ -1,9 +1,11 @@
 package com.developer.jatin.hack_bvp;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,12 +15,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
+import static com.developer.jatin.hack_bvp.R.id.center;
 import static com.developer.jatin.hack_bvp.R.id.toolbar;
 
 public class MainScreen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 Toolbar toolbar;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +33,7 @@ Toolbar toolbar;
 //         toolbar = (Toolbar) findViewById(toolbar);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 //
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +93,7 @@ Toolbar toolbar;
         int id = item.getItemId();
 
         if (id == R.id.home) {
-            toolbar.setTitle("Professional");
+            toolbar.setTitle("Home");
             toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
             Talks talks=new Talks();
 
@@ -95,14 +103,20 @@ Toolbar toolbar;
 
             // Handle the camea action
         } else if (id == R.id.proposals) {
+            toolbar.setTitle("Proposals");
+            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
 
         } else if (id == R.id.form) {
-
-        } else if (id == R.id.talk) {
+            toolbar.setTitle("Form");
+            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
 
         } else if (id == R.id.about_us) {
+            toolbar.setTitle("About Us");
+            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
 
         } else if (id == R.id.up_coming_talks) {
+            toolbar.setTitle("Upcoming Talks");
+            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
 
         }
 

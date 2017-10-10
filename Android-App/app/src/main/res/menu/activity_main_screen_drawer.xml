@@ -14,10 +14,7 @@
             android:id="@+id/form"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Form" />
-        <item
-            android:id="@+id/talk"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Talks" />
+
         <item
             android:id="@+id/about_us"
             android:icon="@drawable/ic_menu_slideshow"

@@ -2,12 +2,17 @@ package com.developer.jatin.hack_bvp;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
 
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import static com.developer.jatin.hack_bvp.R.id.center;
 
 
 /**
@@ -19,6 +24,7 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Talks extends Fragment {
+    TextView publicspeaking_text,writing_text,python_text,maths_text;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -65,8 +71,112 @@ public class Talks extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_start, container, false);
+        View view = inflater.inflate(R.layout.activity_start, container, false);
 
+        publicspeaking_text=(TextView)view.findViewById(R.id.text_englishspeaking);
+        writing_text=(TextView)view.findViewById(R.id.text_writing);
+        python_text=(TextView)view.findViewById(R.id.text_python);
+        maths_text=(TextView)view.findViewById(R.id.text_basicmaths);
+
+
+
+        publicspeaking_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+                alert.setTitle("Speaking Skills");
+//                ImageView imageView=new ImageView(Links_activity.this);
+                TextView textView=new TextView(getActivity());
+                textView.setText("Even if you don't need to make regular presentations   in front of a group, there are plenty of situations where good public speaking skills can help you advance your career and create opportunities.\n" +
+                        "\n" +
+                        "For example, you might have to talk about your organization at a conference, make a speech after accepting an award, or teach a class to new recruits. Speaking to an audience also includes online presentations or talks; for instance, when training a virtual team, or when speaking to a group of customers in an online meeting.\n" +
+                        "\n" +
+                        "Good public speaking skills are important in other areas of your life, as well. ");
+                textView.setGravity(center);
+                 textView.setPadding(20, 20, 20, 20);
+//                imageView.setBackgroundResource(R.drawable.android);
+
+                alert.setView(textView);
+                alert.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                    }
+                });
+                alert.show();
+            }
+        });
+        writing_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+                alert.setTitle("Writing - Skills");
+//                ImageView imageView=new ImageView(Links_activity.this);
+                TextView textView=new TextView(getActivity());
+                textView.setText("Today, when anyone can be their own publisher, we see more and more examples of poor writing skills both in print and on the web.  Poor writing skills create poor first impressions and many readers will have an immediate negative reaction if they spot a spelling or grammatical mistake. As just one example, a spelling mistake on a commercial web page may cause potential customers to doubt the credibility of the website and the organisation.\n" +
+                        "\n" +
+                        "Read more at: https://www.skillsyouneed.com/writing-skills.html ");
+                textView.setGravity(center);
+                textView.setPadding(20, 20, 20, 20);
+//                imageView.setBackgroundResource(R.drawable.android);
+
+                alert.setView(textView);
+                alert.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                    }
+                });
+                alert.show();
+            }
+        });
+        python_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+                alert.setTitle("Python");
+//                ImageView imageView=new ImageView(Links_activity.this);
+                TextView textView=new TextView(getActivity());
+                textView.setText("Python is a dynamic, interpreted (bytecode-compiled) language. There are no type declarations of variables, parameters, functions, or methods in source code. This makes the code short and flexible, and you lose the compile-time type checking of the source code. Python tracks the types of all values at runtime and flags code that does not make sense as it runs.\n" +
+                        "\n" +
+                        "An excellent way to see how Python code works is to run the Python interpreter and type code right into it.  ");
+                textView.setGravity(center);
+                textView.setPadding(20, 20, 20, 20);
+//                imageView.setBackgroundResource(R.drawable.android);
+
+                alert.setView(textView);
+                alert.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                    }
+                });
+                alert.show();
+            }
+        });
+        maths_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+                alert.setTitle("maths");
+//                ImageView imageView=new ImageView(Links_activity.this);
+                TextView textView=new TextView(getActivity());
+                textView.setText(" Through the use of abstraction and logic, mathematics developed from counting, calculation, measurement, and the systematic study of the shapes and motions of physical objects.\n Practical mathematics has been a human activity from as far back as written records exist.\n The research required to solve mathematical problems can take years or even centuries of sustained inquiry.");
+                textView.setGravity(center);
+                textView.setPadding(20, 20, 20, 20);
+//                imageView.setBackgroundResource(R.drawable.android);
+
+                alert.setView(textView);
+                alert.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                    }
+                });
+                alert.show();
+            }
+        });
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
