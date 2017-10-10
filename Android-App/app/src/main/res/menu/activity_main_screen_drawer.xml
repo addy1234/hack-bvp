@@ -6,10 +6,7 @@
             android:id="@+id/home"
             android:icon="@drawable/ic_menu_camera"
             android:title="Home" />
-        <item
-            android:id="@+id/proposals"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Proposals" />
+  \
         <item
             android:id="@+id/form"
             android:icon="@drawable/ic_menu_slideshow"

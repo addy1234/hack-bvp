@@ -1,8 +1,11 @@
 package com.developer.jatin.hack_bvp;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.customtabs.CustomTabsIntent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
@@ -102,20 +105,36 @@ Toolbar toolbar;
             fragmentManager.beginTransaction().replace(R.id.app_bar,talks,talks.getTag()).commit();
 
             // Handle the camea action
-        } else if (id == R.id.proposals) {
-            toolbar.setTitle("Proposals");
-            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
-
         } else if (id == R.id.form) {
             toolbar.setTitle("Form");
             toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
 
         } else if (id == R.id.about_us) {
             toolbar.setTitle("About Us");
-            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
+//            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
+            String url = "https://github.com/addy1234/hack-bvp";
+
+
+            final CustomTabsIntent intent=new CustomTabsIntent.Builder().build();
+            intent.launchUrl(MainScreen.this, Uri.parse(url));
 
         } else if (id == R.id.up_coming_talks) {
             toolbar.setTitle("Upcoming Talks");
+            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
+            UpcompingTalks talks=new UpcompingTalks();
+
+//            ProfessionalFragment blankFragment=new ProfessionalFragment();
+            android.app.FragmentManager fragmentManager=getFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.app_bar,talks,talks.getTag()).commit();
+
+        } else if (id == R.id.nav_share) {
+            toolbar.setTitle("share");
+
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "share with friends");
+            sendIntent.setType("text/plain");
+            startActivity(Intent.createChooser(sendIntent, "share"));
             toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
 
         }
