@@ -55,18 +55,6 @@
 		<!-- Head Libs -->
 
 		<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-		<script>
-		  // Initialize Firebase
-		  var config = {
-		    apiKey: "AIzaSyD2KKs08K6HmPmlcjxgYuNR--wlzZ73-go",
-		    authDomain: "temp-db0ed.firebaseapp.com",
-		    databaseURL: "https://temp-db0ed.firebaseio.com",
-		    projectId: "temp-db0ed",
-		    storageBucket: "temp-db0ed.appspot.com",
-		    messagingSenderId: "754851832660"
-		  };
-		  firebase.initializeApp(config);
-		</script>
 
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
@@ -337,29 +325,5 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
-	<script>
-		var database = firebase.database();
-
-		function writeUserData(name, email, subject, message) {
-			firebase.database().ref('Persons/').set({
-				Name: name,
-				Email: email,
-				Subject: subject,
-				Message: message
-			});
-		}
-
-		document.getElementById('contactForm').addEventListener('submit', submitForm);
-
-		function submitForm(e) {
-			e.preventDefault();
-			const name = document.getElementById('name').value;
-			const email = document.getElementById('email').value;
-			const subject = document.getElementById('subject').value;
-			const message = document.getElementById('message').value;
-			console.log(name);
-			writeUserData(name, email, subject, message);
-		}
-	</script>
 	</body>
 </html>
