@@ -106,6 +106,11 @@ Toolbar toolbar;
         } else if (id == R.id.form) {
             toolbar.setTitle("Form");
             toolbar.setBackgroundColor(Color.parseColor("#ff420e"));
+            String url = "https://addy1234.github.io/hack-bvp/apply.html";
+
+
+            final CustomTabsIntent intent=new CustomTabsIntent.Builder().build();
+            intent.launchUrl(MainScreen.this, Uri.parse(url));
 
         } else if (id == R.id.about_us) {
             toolbar.setTitle("About Us");
