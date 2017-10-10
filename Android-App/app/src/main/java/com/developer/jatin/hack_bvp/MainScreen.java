@@ -82,9 +82,7 @@ Toolbar toolbar;
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }
@@ -97,7 +95,7 @@ Toolbar toolbar;
 
         if (id == R.id.home) {
             toolbar.setTitle("Home");
-            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
+            toolbar.setBackgroundColor(Color.parseColor("#ff420e"));
             Talks talks=new Talks();
 
 //            ProfessionalFragment blankFragment=new ProfessionalFragment();
@@ -107,7 +105,7 @@ Toolbar toolbar;
             // Handle the camea action
         } else if (id == R.id.form) {
             toolbar.setTitle("Form");
-            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
+            toolbar.setBackgroundColor(Color.parseColor("#ff420e"));
 
         } else if (id == R.id.about_us) {
             toolbar.setTitle("About Us");
@@ -120,7 +118,7 @@ Toolbar toolbar;
 
         } else if (id == R.id.up_coming_talks) {
             toolbar.setTitle("Upcoming Talks");
-            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
+            toolbar.setBackgroundColor(Color.parseColor("#ff420e"));
             UpcompingTalks talks=new UpcompingTalks();
 
 //            ProfessionalFragment blankFragment=new ProfessionalFragment();
@@ -135,7 +133,7 @@ Toolbar toolbar;
             sendIntent.putExtra(Intent.EXTRA_TEXT, "share with friends");
             sendIntent.setType("text/plain");
             startActivity(Intent.createChooser(sendIntent, "share"));
-            toolbar.setBackgroundColor(Color.parseColor("#0084a8"));
+            toolbar.setBackgroundColor(Color.parseColor("#ff420e"));
 
         }
 
