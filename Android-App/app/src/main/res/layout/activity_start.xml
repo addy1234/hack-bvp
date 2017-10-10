@@ -5,12 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical"
     tools:context="com.developer.jatin.hack_bvp.Start">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginTop="50dp">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -57,7 +59,8 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:text="There are five basic elements of public speaking\nthe communicator, message, medium, audience and ....."
-                        android:gravity="center"/>
+                        android:gravity="center"
+                        android:id="@+id/text_englishspeaking"/>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
@@ -74,6 +77,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:gravity="center"
+                        android:id="@+id/prerequistie_english_speaking"
                         android:layout_weight="1.2"
                         android:text="PreRequistie..."
                         android:textColor="#000"
@@ -162,6 +166,114 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:text="Basic mathematics, pre-algebra, geometry, statistics\n, and algebra skills are what this website will teach you...."
+                        android:gravity="center"
+                        android:id="@+id/text_basicmaths"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#daa520"></LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Target Audience : School Students"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1.2"
+                        android:text="PreRequistie..."
+                        android:id="@+id/prerequistie_basictalk"
+                        android:textColor="#000"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#daa520"></LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/user3"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="NAME : JOE"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="SKILL - MATHS Hons"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="5dp"></LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Topic  :"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:text="Writing"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/text_writing"
+                        android:text="Writing well is difficult, isn’t it?
+
+Sure, you can string a few ..."
                         android:gravity="center"/>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -181,6 +293,7 @@
                         android:gravity="center"
                         android:layout_weight="1.2"
                         android:text="PreRequistie..."
+                     android:id="@+id/prerequistie_writing"
                         android:textColor="#000"
                         />
                 </LinearLayout>
@@ -197,12 +310,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2"
-                        android:background="@drawable/user2"/>
+                        android:background="@drawable/user4"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="NAME : JOE"
+                        android:text="NAME : YASH"
                         android:textStyle="bold"
                         android:gravity="center"/>
                     <TextView
@@ -210,7 +323,113 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:textStyle="bold"
-                        android:text="SKILL - MATHS Hons"
+                        android:text="SKILL - English Hons"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Topic  :"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:text="Python"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:id="@+id/text_python"
+                        android:text="Welcome to Google's Python online tutorial. It is based on the introductory Python course offered internally.... "
+                        android:gravity="center"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#daa520"></LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Target Audience : under graduates"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:id="@+id/prerequistie_python"
+                        android:layout_weight="1.2"
+                        android:text="PreRequistie..."
+                        android:textColor="#000"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#daa520"></LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/user6"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="NAME  : DIESEL"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="SKILL - MS IN CSE(STANFORD)"
                         android:gravity="center"/>
                 </LinearLayout>
             </LinearLayout>
