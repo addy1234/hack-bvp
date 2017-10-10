@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Apply | SMARTALKS</title>
+		<title>Connect | SMARTALKS</title>
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -129,7 +129,7 @@
 					<div class="container">
 						<div class="row mt-xl">
 							<div class="col-md-10 col-md-offset-2 pt-xlg mt-xlg align-right">
-								<h1 class="text-uppercase font-weight-light mt-xl text-color-primary">Propose a talk</h1>
+								<h1 class="text-uppercase font-weight-light mt-xl text-color-primary">Connect to the Speaker</h1>
 							</div>
 						</div>
 					</div>
@@ -142,7 +142,7 @@
 
 							<h2 class="mb-none">Please fill this form</h2>
 
-
+							<p class="lead mb-xl mt-xs">you can select the speaker based on their upvotes also</p>
 
 							<div class="alert alert-success hidden mt-lg" id="contactSuccess">
 								<strong>Success!</strong> Your message has been sent to us.
@@ -154,22 +154,21 @@
 							</div>
 
 							<form id="contactForm">
-								<p class="lead mb-xl mt-xs">About Your Talk</p>
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-12">
-											<input type="text" placeholder="Topic" value="" data-msg-required="Please enter the topic." maxlength="100" class="form-control" name="topic" id="topic" required>
+											<input type="text" placeholder="Organisation Name" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-12">
-											<input type="text" placeholder="Field/Domain" value="" data-msg-required="Please enter the Field/Domain." maxlength="100" class="form-control" name="field" id="email" required>
+											<input type="Address" placeholder="Address" value="" data-msg-required="Please enter your address." data-msg-email="Please enter a valid  address." maxlength="100" class="form-control" name="address" id="address" required>
 										</div>
 									</div>
 								</div>
-								<p class="lead mb-xl mt-xs">About You</p>
+
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-12">
@@ -180,27 +179,36 @@
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-12">
-											<input type="email" placeholder="Your E-mail" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+											<input type="number" placeholder="Your Contact Number" value="" data-msg-required="Please enter your contact number." data-msg-email="Please enter a valid contat number." maxlength="100" class="form-control" name="number" id="numberl" required>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="text" placeholder="Profile link" value="" data-msg-required="Please enter the profile link." maxlength="100" class="form-control" name="text" id="text" required>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-12">
-											<input type="text" placeholder="Subject" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control name="subject" id="subject" required>
+											<input type="text" placeholder="Your target audience" value="" data-msg-required="Please enter your target audience." data-msg-email="Please enter a valid target audience." maxlength="100" class="form-control" name="text" id="text" required>
 										</div>
 									</div>
 								</div>
+
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-12">
-											<textarea maxlength="5000" placeholder="Message" data-msg-required="Please enter your message." rows="5" class="form-control name="message" id="message" required></textarea>
+											<textarea maxlength="5000" placeholder="Remarks" data-msg-required="Please enter your message." rows="5" class="form-control" name="message" id="message" required></textarea>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<input type="submit" value="Send Message" class="btn btn-primary mb-xlg" data-loading-text="Loading...">
+										<input type="submit" value="Apply" class="btn btn-primary mb-xlg" data-loading-text="Loading...">
 									</div>
 								</div>
 							</form>

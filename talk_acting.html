@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Apply | SMARTALKS</title>
+		<title>About Talk | SMARTALKS</title>
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -53,9 +53,6 @@
 		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Head Libs -->
-
-		<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
@@ -92,13 +89,13 @@
 															Home
 														</a>
 													</li>
-													<li>
+													<li class="active">
 														<a href="demo-construction-company.html">
 															Talk Proposals
 														</a>
 													</li>
 
-													<li class="active">
+													<li>
 														<a href="demo-construction-projects.html">
 															Propose a talk
 														</a>
@@ -129,7 +126,7 @@
 					<div class="container">
 						<div class="row mt-xl">
 							<div class="col-md-10 col-md-offset-2 pt-xlg mt-xlg align-right">
-								<h1 class="text-uppercase font-weight-light mt-xl text-color-primary">Propose a talk</h1>
+								<h1 class="text-uppercase font-weight-light mt-xl text-color-primary">Talk Details</h1>
 							</div>
 						</div>
 					</div>
@@ -137,76 +134,68 @@
 
 				<div class="container">
 
-					<div class="row pt-xl mb-xl">
-						<div class="col-md-6 col-md-offset-3">
+					<div class="row pt-sm mb-xl">
+						<div class="col-md-3">
+							<aside class="sidebar">
+								<h4 class="pt-xl mb-md text-color-dark">Other Talks</h4>
+								<ul class="nav nav-list mb-xl show-bg-active">
+									<li><a href="demo-construction-services.html">Overview</a></li>
+									<li><a href="demo-construction-services-detail.html">Pre-Construction</a></li>
+									<li class="active"><a href="demo-construction-services-detail.html">General Construction</a></li>
+									<li><a href="demo-construction-services-detail.html">Plumbing</a></li>
+									<li><a href="demo-construction-services-detail.html">Painting</a></li>
+								</ul>
 
-							<h2 class="mb-none">Please fill this form</h2>
-
-
-
-							<div class="alert alert-success hidden mt-lg" id="contactSuccess">
-								<strong>Success!</strong> Your message has been sent to us.
-							</div>
-
-							<div class="alert alert-danger hidden mt-lg" id="contactError">
-								<strong>Error!</strong> There was an error sending your message.
-								<span class="font-size-xs mt-sm display-block" id="mailErrorMessage"></span>
-							</div>
-
-							<form id="contactForm">
-								<p class="lead mb-xl mt-xs">About Your Talk</p>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<input type="text" placeholder="Topic" value="" data-msg-required="Please enter the topic." maxlength="100" class="form-control" name="topic" id="topic" required>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<input type="text" placeholder="Field/Domain" value="" data-msg-required="Please enter the Field/Domain." maxlength="100" class="form-control" name="field" id="email" required>
-										</div>
-									</div>
-								</div>
-								<p class="lead mb-xl mt-xs">About You</p>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<input type="email" placeholder="Your E-mail" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<input type="email" placeholder="Your E-mail" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<input type="text" placeholder="Subject" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control name="subject" id="subject" required>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<textarea maxlength="5000" placeholder="Message" data-msg-required="Please enter your message." rows="5" class="form-control name="message" id="message" required></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<input type="submit" value="Send Message" class="btn btn-primary mb-xlg" data-loading-text="Loading...">
-									</div>
-								</div>
-							</form>
+							</aside>
 
 						</div>
+						<div class="col-md-9">
 
+							<h2 class="mb-sm">Acting as a Career</h2>
+
+							<img class="img-responsive pull-right ml-xlg mb-l mt-l" src="images/acting_teacher.jpg" alt="" />
+
+
+
+							<p>
+              Acting is an activity in which a story is told by means of its enactment by an actor or actress who adopts a
+              character—in theatre, television, film, radio, or any other medium that makes use of the mimetic mode.</p>
+
+
+							<div class="row">
+								<div class="col-md-5">
+									<p class="pb-xl"></p>
+
+								</div>
+								<div class="col-md-7">
+									<div class="nivo-slider pb-xl mb-xl">
+										<div class="slider-wrapper theme-default">
+											<div id="nivoSlider" class="nivoSlider mt-none mb-xlg">
+												<img src="images/act.jpg" data-thumb="img/demos/construction/slides/slide-construction-small-1.jpg" alt="" />
+											</div>
+											<div id="htmlcaption" class="nivo-html-caption"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<p>Acting involves a broad range of skills, including a well-developed imagination, emotional facility, physical
+             expressivity, vocal projection, clarity of speech, and the ability to interpret drama. Acting also demands an
+              ability to employ dialects, accents, improvisation, observation and emulation, mime, and stage combat. Many actors
+             train at length in specialist programmes or colleges to develop these skills. The vast majority of professional
+             actors have undergone extensive training. Actors and actresses will often have many instructors and teachers for
+                a full range of training involving singing, scene-work, audition techniques, and acting for camera.</p>
+
+							<h4 class="mt-xlg mb-md">Qualities of Speaker</h4>
+
+							<ul class="list list-icons list-primary mt-xl mb-xlg">
+								<li class="appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0"><i class="fa fa-check"></i>She has won many records in her acting career</li>
+								<li class="appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300"><i class="fa fa-check"></i> She has given more than 9 talks.</li>
+								<li class="appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="600"><i class="fa fa-check"></i>She has also participated in more than 15 live stage shows</li>
+
+							</ul>
+
+						</div>
 					</div>
 
 				</div>
@@ -341,5 +330,22 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
+
+
+
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-12345678-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		 -->
+
+
 	</body>
 </html>
