@@ -165,7 +165,7 @@
 								<span class="font-size-xs mt-sm display-block" id="mailErrorMessage"></span>
 							</div>
 
-							<form id="contactForm" onsubmit="myFunction()">
+							<form id="contactForm">
 								<div class="row">
 									<div class="form-group">
 										<div class="col-md-12">
@@ -349,11 +349,15 @@
 			});
 		}
 
-		function myFunction() {
-			const name = document.getElementById('name');
-			const email = document.getElementById('email');
-			const subject = document.getElementById('subject');
-			const message = document.getElementById('message');
+		document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+		function submitForm(e) {
+			e.preventDefault();
+			const name = document.getElementById('name').value;
+			const email = document.getElementById('email').value;
+			const subject = document.getElementById('subject').value;
+			const message = document.getElementById('message').value;
+			console.log(name);
 			writeUserData(name, email, subject, message);
 		}
 	</script>
