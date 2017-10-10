@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>About Talk | SMARTALKS</title>
+		<title>Connect | SMARTALKS</title>
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -53,6 +53,9 @@
 		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Head Libs -->
+
+		<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
@@ -89,13 +92,13 @@
 															Home
 														</a>
 													</li>
-													<li class="active">
+													<li>
 														<a href="demo-construction-company.html">
 															Talk Proposals
 														</a>
 													</li>
 
-													<li>
+													<li class="active">
 														<a href="demo-construction-projects.html">
 															Propose a talk
 														</a>
@@ -126,7 +129,7 @@
 					<div class="container">
 						<div class="row mt-xl">
 							<div class="col-md-10 col-md-offset-2 pt-xlg mt-xlg align-right">
-								<h1 class="text-uppercase font-weight-light mt-xl text-color-primary">Talk Details</h1>
+								<h1 class="text-uppercase font-weight-light mt-xl text-color-primary">Connect to the Speaker</h1>
 							</div>
 						</div>
 					</div>
@@ -134,69 +137,84 @@
 
 				<div class="container">
 
-					<div class="row pt-sm mb-xl">
-						<div class="col-md-3">
-							<aside class="sidebar">
-								<h4 class="pt-xl mb-md text-color-dark">Other Talks</h4>
-								<ul class="nav nav-list mb-xl show-bg-active">
-									<li><a href="demo-construction-services.html">Overview</a></li>
-									<li><a href="demo-construction-services-detail.html">Pre-Construction</a></li>
-									<li class="active"><a href="demo-construction-services-detail.html">General Construction</a></li>
-									<li><a href="demo-construction-services-detail.html">Plumbing</a></li>
-									<li><a href="demo-construction-services-detail.html">Painting</a></li>
-								</ul>
+					<div class="row pt-xl mb-xl">
+						<div class="col-md-6 col-md-offset-3">
 
-							</aside>
+							<h2 class="mb-none">Please fill this form</h2>
 
-						</div>
-						<div class="col-md-9">
+							<p class="lead mb-xl mt-xs">you can select the speaker based on their upvotes also</p>
 
-							<h2 class="mb-sm">Beginner guide to Python</h2>
+							<div class="alert alert-success hidden mt-lg" id="contactSuccess">
+								<strong>Success!</strong> Your message has been sent to us.
+							</div>
 
-							<img class="img-responsive pull-right ml-xlg mb-xl mt-xl" src="images/py_teacher.jpg" alt="" />
+							<div class="alert alert-danger hidden mt-lg" id="contactError">
+								<strong>Error!</strong> There was an error sending your message.
+								<span class="font-size-xs mt-sm display-block" id="mailErrorMessage"></span>
+							</div>
 
-
-
-							<p>Python interpreters are available for many operating systems, allowing Python code to run on a wide variety of systems.
-               CPython, the reference implementation of Python, is open source software and has a community-based development
-                model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software
-               Foundation.</p>
-
-							<div class="row">
-								<div class="col-md-5">
-									<p class="pb-xl">Python is a widely used high-level programming language for general-purpose programming, created
-                         by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy
-                         that emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than
-                         curly brackets or keywords), and a syntax that allows programmers to express concepts in fewer lines of code
-                        than might be used in languages such as C++ or Java. The language provides constructs intended to enable
-                         writing clear programs on both a small and large scale.</p>
-								</div>
-								<div class="col-md-7">
-									<div class="nivo-slider pb-xl mb-xl">
-										<div class="slider-wrapper theme-default">
-											<div id="nivoSlider" class="nivoSlider mt-none mb-xlg">
-												<img src="images/python-logo.gif" data-thumb="img/demos/construction/slides/slide-construction-small-1.jpg" alt="" />
-											</div>
-											<div id="htmlcaption" class="nivo-html-caption"></div>
+							<form id="contactForm">
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="text" placeholder="Organisation Name" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
 										</div>
 									</div>
 								</div>
-							</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="Address" placeholder="Address" value="" data-msg-required="Please enter your address." data-msg-email="Please enter a valid  address." maxlength="100" class="form-control" name="address" id="address" required>
+										</div>
+									</div>
+								</div>
 
-							<p>Python features a dynamic type system and automatic memory management and supports multiple programming paradigms,
-              including object-oriented, imperative, functional programming, and procedural styles. It has a large and
-              comprehensive standard library.</p>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="email" placeholder="Your E-mail" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="number" placeholder="Your Contact Number" value="" data-msg-required="Please enter your contact number." data-msg-email="Please enter a valid contat number." maxlength="100" class="form-control" name="number" id="numberl" required>
+										</div>
+									</div>
+								</div>
 
-							<h4 class="mt-xlg mb-md">Qualities of Speaker</h4>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="text" placeholder="Profile link" value="" data-msg-required="Please enter the profile link." maxlength="100" class="form-control" name="text" id="text" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="text" placeholder="Your target audience" value="" data-msg-required="Please enter your target audience." data-msg-email="Please enter a valid target audience." maxlength="100" class="form-control" name="text" id="text" required>
+										</div>
+									</div>
+								</div>
 
-							<ul class="list list-icons list-primary mt-xl mb-xlg">
-								<li class="appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0"><i class="fa fa-check"></i> He is highly qualified</li>
-								<li class="appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300"><i class="fa fa-check"></i> He has given more than 10 talks.</li>
-								<li class="appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="600"><i class="fa fa-check"></i> He has done machine learning in python from Stanford University</li>
-
-							</ul>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<textarea maxlength="5000" placeholder="Remarks" data-msg-required="Please enter your message." rows="5" class="form-control" name="message" id="message" required></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<input type="submit" value="Apply" class="btn btn-primary mb-xlg" data-loading-text="Loading...">
+									</div>
+								</div>
+							</form>
 
 						</div>
+
 					</div>
 
 				</div>
@@ -331,22 +349,5 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
-
-
-
-
-		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-12345678-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-		 -->
-
-
 	</body>
 </html>
