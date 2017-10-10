@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<android.support.v7.widget.RecyclerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -64,7 +64,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
-                        android:background="#daa520"></LinearLayout>
+                        android:background="#d3dbc0"></LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -79,14 +79,14 @@
                         android:gravity="center"
                         android:id="@+id/prerequistie_english_speaking"
                         android:layout_weight="1.2"
-                        android:text="PreRequistie..."
+                        android:text="Prerequistie..."
                         android:textColor="#000"
                         />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="5dp"
                     android:layout_height="match_parent"
-                    android:background="#daa520"></LinearLayout>
+                    android:background="#d3dbc0"></LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -96,7 +96,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2"
-                        android:background="@drawable/user1"/>
+                        android:background="@drawable/user11"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -109,7 +109,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:textStyle="bold"
-                        android:text="SKILL -Public Speaker"
+                        android:text="SKILL -Public Speaking"
                         android:gravity="center"/>
                 </LinearLayout>
             </LinearLayout>
@@ -171,7 +171,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
-                        android:background="#daa520"></LinearLayout>
+                        android:background="#d3dbc0"></LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -185,7 +185,7 @@
                         android:layout_height="0dp"
                         android:gravity="center"
                         android:layout_weight="1.2"
-                        android:text="PreRequistie..."
+                        android:text="Prerequistie..."
                         android:id="@+id/prerequistie_maths"
                         android:textColor="#000"
                         />
@@ -193,7 +193,7 @@
                 <LinearLayout
                     android:layout_width="5dp"
                     android:layout_height="match_parent"
-                    android:background="#daa520"></LinearLayout>
+                    android:background="#d3dbc0"></LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -203,7 +203,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2"
-                        android:background="@drawable/user3"/>
+                        android:background="@drawable/user33"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -278,7 +278,7 @@ Sure, you can string a few ..."
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
-                        android:background="#daa520"></LinearLayout>
+                        android:background="#d3dbc0"></LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -292,7 +292,7 @@ Sure, you can string a few ..."
                         android:layout_height="0dp"
                         android:gravity="center"
                         android:layout_weight="1.2"
-                        android:text="PreRequistie..."
+                        android:text="Prerequistie..."
                      android:id="@+id/prerequistie_writing"
                         android:textColor="#000"
                         />
@@ -300,7 +300,7 @@ Sure, you can string a few ..."
                 <LinearLayout
                     android:layout_width="5dp"
                     android:layout_height="match_parent"
-                    android:background="#daa520"></LinearLayout>
+                    android:background="#d3dbc0"></LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -310,7 +310,7 @@ Sure, you can string a few ..."
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2"
-                        android:background="@drawable/user4"/>
+                        android:background="@drawable/user44"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -384,7 +384,7 @@ Sure, you can string a few ..."
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
-                        android:background="#daa520"></LinearLayout>
+                        android:background="#d3dbc0"></LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -399,14 +399,14 @@ Sure, you can string a few ..."
                         android:gravity="center"
                         android:id="@+id/prerequistie_python"
                         android:layout_weight="1.2"
-                        android:text="PreRequistie..."
+                        android:text="Prerequistie..."
                         android:textColor="#000"
                         />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="5dp"
                     android:layout_height="match_parent"
-                    android:background="#daa520"></LinearLayout>
+                    android:background="#d3dbc0"></LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -416,7 +416,7 @@ Sure, you can string a few ..."
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2"
-                        android:background="@drawable/user6"/>
+                        android:background="@drawable/user66"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -439,4 +439,4 @@ Sure, you can string a few ..."
 
 </LinearLayout>
 
-</ScrollView>
+</android.support.v7.widget.RecyclerView>

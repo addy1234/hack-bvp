@@ -4,21 +4,21 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/home"
             android:title="Home" />
-  \
+
         <item
             android:id="@+id/form"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/form"
             android:title="Form" />
 
         <item
             android:id="@+id/about_us"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/about"
             android:title="About-Us" />
         <item
             android:id="@+id/up_coming_talks"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/upcoming"
             android:title="Up Coming Talks" />
     </group>
 
